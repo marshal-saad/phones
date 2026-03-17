@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  background-color: black;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  z-index: 1000;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+nav div ul {
+  display: flex;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul {
+  margin-right: 40px;
+  margin-top: 10px;
+}
+nav div h3 {
+  margin-left: 40px;
+}
+nav div ul li a {
+  text-decoration: none;
+  color: #7e7c7c;
+  border-radius: 20px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  padding: 5px 10px;
+}
+nav div ul li a:hover {
+  background-color: #efecec76;
+  color: black;
+}
+
+
+.co {
+  padding: 40px;
+}
+.co h5 {
+  color: #616161;
+}
+.co h2 {
+  color: #d6d6d6;
+  font-size: 65px;
+  margin-top: -20px;
+}
+.co span {
+  color: #616161;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+.co p {
+  color: #616161;
+  margin-top: -40px;
+  font-size: 17px;
+}
+
+/* Table */
+.compare {
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #616161;
+  min-width: 500px;
+}
+th {
+  padding: 20px;
+  font-size: 18px;
+  color: #aaa;
+  border-bottom: 1px solid #333;
+}
+td:first-child,
+th:first-child {
+  width: 40%;
+}
+td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+td:first-child {
+  text-align: left;
+  color: #aaa;
+}
+tr:hover {
+  background: #16161643;
+}
+
+.btn {
+  justify-content: center;
+  display: flex;
+  margin-top: 60px;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px 60px;
+}
+.btn a {
+  text-decoration: none;
+  background-color: #ececec;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.btn .fir {
+  transition: transform 0.2s ease;
+  color: #0b0b0b;
+}
+.btn .two {
+  transition:
+    transform 0.2s ease,
+    border 0.2s ease;
+  background-color: #0b0b0b;
+  border: 1px solid rgb(175, 175, 175);
+  color: #fdfdfd;
+}
+.btn .fir:hover {
+  transform: translateY(-5px);
+}
+.btn .two:hover {
+  border: 2px solid white;
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+footer .main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.inf h5 {
+  color: #474747;
+  margin-bottom: 10px;
+  margin-top: 70px;
+}
+.inf a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s color ease;
+  color: rgb(132, 132, 132);
+}
+.inf a:hover {
+  color: #ececec;
+}
+.main .inf {
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 20%;
+  flex-direction: column;
+}
+.main {
+  padding-bottom: 40px;
+  border-bottom: 0.1em solid rgba(30, 30, 30, 0.438);
+}
+.smal {
+  display: flex;
+  color: #515050;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0;
+}
+.smal p {
+  font-size: 12px;
+}
+.na {
+  display: flex;
+  gap: 15px;
+  color: #515050;
+}
+.na h5 {
+  border: 1px solid rgb(42, 42, 42);
+  padding: 6px 10px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.na h5:hover {
+  background-color: #ececec;
+  color: #0b0b0b;
+}
+
+
+@media (max-width: 1024px) {
+  nav div h3 {
+    margin-left: 20px;
+  }
+  nav ul {
+    margin-right: 20px;
+  }
+
+  .co h2 {
+    font-size: 45px;
+  }
+  .co p {
+    margin-top: -10px;
+  }
+
+  footer {
+    padding: 0 30px;
+  }
+  .main .inf {
+    width: 40%;
+  }
+}
+
+
+@media (max-width: 768px) {
+ 
+
+  .co {
+    padding: 24px 20px;
+  }
+  .co h2 {
+    font-size: 32px;
+    margin-top: 0;
+  }
+  .co p {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .compare {
+    width: 100%;
+    margin-top: 30px;
+  }
+  table {
+    font-size: 13px;
+  }
+  th {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+  td {
+    padding: 12px 8px;
+  }
+
+  .btn {
+    gap: 14px;
+    margin-top: 30px;
+  }
+  .btn a {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  footer {
+    padding: 0 20px;
+  }
+  .main .inf {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  .inf h5 {
+    margin-top: 30px;
+  }
+  .smal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
